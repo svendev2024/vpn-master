@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardViewShare"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_big_16dp"
+    android:layout_marginTop="@dimen/dimen_big_16dp"
+    android:layout_marginEnd="@dimen/dimen_big_16dp"
+    android:background="@drawable/bg_card_dark"
+    android:elevation="@dimen/dimen_small_4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/dimen_medium_8dp">
+
+    <ImageView
+        android:id="@+id/imageFlag"
+        android:layout_width="96dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_dummy_flag" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/imageConnect"
+        android:layout_toLeftOf="@id/imageConnect"
+        android:layout_toEndOf="@id/imageFlag"
+        android:layout_toRightOf="@id/imageFlag"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/textHostName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/textIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="@tools:sample/lorem" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dimen_big_16dp"
+        android:layout_marginRight="@dimen/dimen_big_16dp" />
+
+</RelativeLayout>

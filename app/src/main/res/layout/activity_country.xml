@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite"
+    tools:context=".ui.CountryActivity">
+
+    <com.frogobox.recycler.widget.FrogoRecyclerView
+        android:id="@+id/recycler_view_country"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ads"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/dimen_big_16dp"
+        android:paddingEnd="@dimen/dimen_big_16dp"
+        android:paddingRight="@dimen/dimen_big_16dp"
+        tools:listitem="@layout/view_item_country" />
+
+    <include
+        android:id="@+id/ads"
+        layout="@layout/ads_banner" />
+
+</RelativeLayout>
